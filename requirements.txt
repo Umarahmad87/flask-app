@@ -33,7 +33,7 @@ grpcio==1.31.0
 h5py==2.10.0
 idna==2.10
 importlib-metadata==2.0.0
-ipykernel==5.3.4
+ipykernel
 ipython==7.19.0
 ipython-genutils==0.2.0
 itsdangerous==1.1.0

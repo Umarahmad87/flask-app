@@ -2,23 +2,22 @@
 Routes and views for the flask application.
 """
 
-from datetime import datetime
-from flask import render_template
-from AIGrader import app
-from flask import request
-from nltk import word_tokenize, pos_tag, sent_tokenize, Text
 from collections import Counter
+from datetime import datetime
+
+import math
+import spacy
 from enchant.checker import SpellChecker
+from flask import render_template
+from flask import request
 from gingerit.gingerit import GingerIt
 from keras.models import load_model
-import tensorflow as tf
-import language_tool_python
-import spacy
-from spacy.matcher import Matcher
-from AIGrader import semantic_similarity
 from langdetect import detect
-import math
+from nltk import word_tokenize, pos_tag, sent_tokenize, Text
+from spacy.matcher import Matcher
 
+from AIGrader import app
+from AIGrader import semantic_similarity
 
 
 #@app.route('/home')

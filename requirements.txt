@@ -5,3 +5,4 @@ pyenchant
 keras
 gingerit
 langdetect
+gunicorn

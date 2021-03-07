@@ -1,9 +1,8 @@
-tensorflow2.0.0a0
+tensorflow
 pyenchant
 flask
 spacy
 nltk
-keras
 gingerit
 langdetect
 gunicorn

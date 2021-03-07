@@ -11,7 +11,8 @@ import spacy
 from flask import render_template
 from flask import request
 from gingerit.gingerit import GingerIt
-from keras.models import load_model
+# from keras.models import load_model
+from tensorflow import keras
 from langdetect import detect
 from nltk import word_tokenize, pos_tag, sent_tokenize, Text
 from spacy.matcher import Matcher
@@ -268,7 +269,7 @@ def load_keras_model():
 
     global model
 
-    model = load_model('C:/Users/User/source/repos/AIGrader/AIGrader/aigrader2.h5')
+    model = keras.models.load_model('C:/Users/User/source/repos/AIGrader/AIGrader/aigrader2.h5')
     
 
 

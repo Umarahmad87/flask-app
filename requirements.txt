@@ -124,7 +124,7 @@ wincertstore==0.2
 wrapt==1.12.1
 yarl==1.5.1
 zipp==3.4.0
-pywin32==227
+pywin32
 pywinpty==0.5.7
 en-core-web-sm
 mkl-fft

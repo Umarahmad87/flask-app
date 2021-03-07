@@ -88,8 +88,6 @@ pyrsistent==0.17.3
 PySocks==1.7.1
 pyspellchecker==0.6.0
 python-dateutil==2.8.1
-pywin32==227
-pywinpty==0.5.7
 PyYAML==5.4.1
 pyzmq==20.0.0
 regex==2020.11.13
@@ -128,6 +126,8 @@ wincertstore==0.2
 wrapt==1.12.1
 yarl==1.5.1
 zipp==3.4.0
+pywin32==227
+pywinpty==0.5.7
 en-core-web-sm
 mkl-fft
 mkl-random

@@ -1,7 +1,7 @@
+pyenchant
 flask
 spacy
 nltk
-pyenchant
 keras
 gingerit
 langdetect

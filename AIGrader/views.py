@@ -7,7 +7,7 @@ from datetime import datetime
 
 import math
 import spacy
-from enchant.checker import SpellChecker
+# from enchant.checker import SpellChecker
 from flask import render_template
 from flask import request
 from gingerit.gingerit import GingerIt
@@ -107,7 +107,7 @@ def submit_textarea():
         text_changed = ''.join(['<br>Hi ' + line for line in text2])
         # (i used <br> to materialize a newline in the returned value)
         print(long_sentences, tense_density, spell_error, grammar_error,unique_vocabulary, word_counter_encoded, sentence_encoded,passive_sentences,semantic_similarity,topic_similarity)
-        print(grammar_checker,spell_checker,unique_counter)
+        # print(grammar_checker,spell_checker,unique_counter)
         results = model.predict([[limit_ratio, long_sentences,passive_score, tense_density, spell_error, grammar_error,semantic_score,topic_score,unique_vocabulary, word_counter_encoded, sentence_encoded]]) > 0.3
 
         get_index = []
@@ -181,13 +181,14 @@ def verbCounter(text):
     return counts
 
 def spellingChecker(text):
-    chkr = SpellChecker("en_US", text)
-    chkr.set_text(text)
-    errors_count = 0
-    for err in chkr:
-        errors_count += 1 
+    return 0
+    #chkr = SpellChecker("en_US", text)
+    #chkr.set_text(text)
+    #errors_count = 0
+    #for err in chkr:
+    #    errors_count += 1
 
-    return errors_count
+    #return errors_count
 
 
 def grammarChecker(text):

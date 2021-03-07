@@ -34,8 +34,8 @@ h5py==2.10.0
 idna==2.10
 importlib-metadata==2.0.0
 ipykernel
-ipython==7.19.0
-ipython-genutils==0.2.0
+ipython
+ipython-genutils
 itsdangerous==1.1.0
 jedi==0.18.0
 Jinja2==2.11.2
